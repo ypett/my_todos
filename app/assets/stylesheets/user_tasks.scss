@@ -2,8 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
 #task-form {
   display: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.well a:hover {
+  text-decoration: line-through;
 }
