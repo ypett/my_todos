@@ -70,7 +70,7 @@ class UserTasksController < ApplicationController
   private
 
     def all_tasks
-      @user_tasks = UserTask.order(:due)
+      @user_tasks = UserTask.order(:due).page(params[:page])
     end
 
     # Use callbacks to share common setup or constraints between actions.

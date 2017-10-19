@@ -47,6 +47,9 @@ gem 'simple_form'
 # Date Picker
 gem 'bootstrap-datepicker-rails'
 
+# Pagination
+gem 'kaminari'
+
 # ** End of My Gems **
 
 group :development, :test do

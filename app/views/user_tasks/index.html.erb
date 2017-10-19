@@ -1,17 +1,30 @@
-<p id="notice"><%= notice %></p>
 
-<h1>User Tasks</h1>
+  <p id="notice"><%= notice %></p>
 
-<%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-info' %>
-<br><br>
+  <h1>User Tasks</h1>
 
-<div id="task-form">
+  <%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-info' %>
 
-</div>
+  <br><br>
 
-<div id="tasks">
-  <%= render @user_tasks %>
-</div>
+  <div id="task-form">
 
-<br>
+  </div>
 
+<% if !@user_tasks.empty? %>
+
+  <div id="tasks">
+    <%= render @user_tasks %>
+  </div>
+  <br>
+
+<% else %>
+
+  <div class="text-center">
+    <%= image_tag("bored.png", size: "200" ) %>
+    <h4>Nothing left to do.  Please enter new tasks.</h4>
+  </div>
+
+<% end %>
+
+<%= paginate @user_tasks %>
