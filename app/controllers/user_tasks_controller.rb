@@ -25,6 +25,12 @@ class UserTasksController < ApplicationController
   def edit
   end
 
+  def about
+  end
+
+  def main
+  end
+
   # POST /user_tasks
   # POST /user_tasks.json
   def create
