@@ -1,4 +1,6 @@
 class UserTask < ApplicationRecord
+  belongs_to :user
+
   validates :description, presence: { message: "Task must be entered, please!" }
   validate :due_date_cannot_be_in_the_past
 

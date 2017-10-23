@@ -50,6 +50,12 @@ gem 'bootstrap-datepicker-rails'
 # Pagination
 gem 'kaminari'
 
+# Secrets
+gem 'figaro'
+
+# User Accounts
+gem 'omniauth-facebook'
+
 # ** End of My Gems **
 
 group :development, :test do
